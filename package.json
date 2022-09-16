@@ -13,9 +13,20 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test"
   },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": [
+        "warn",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ]
+    }
+  },
   "devDependencies": {
     "turbo": "latest",
-    "eslint": "^7.32.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

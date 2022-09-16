@@ -1,7 +1,7 @@
-import { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { Button } from "@turborepo-test/ui/components";
+import { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { Button } from '@turborepo-test/ui/src/components';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,11 +13,17 @@ function App() {
         <p>Welcome to products app</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+            count is:
+            {' '}
+            {count}
           </button>
         </p>
         <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
+          Edit
+          {' '}
+          <code>App.jsx</code>
+          {' '}
+          and save to test HMR updates.
         </p>
         <Button />
         <p>
@@ -29,7 +35,7 @@ function App() {
           >
             Learn React
           </a>
-          {" | "}
+          {' | '}
           <a
             className="App-link"
             href="https://vitejs.dev/guide/features.html"

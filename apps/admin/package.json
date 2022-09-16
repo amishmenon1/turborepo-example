@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "eslint src/**/*.jsx --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "react-scripts test"
+    "test": "react-scripts test --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",
