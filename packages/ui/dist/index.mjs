@@ -1,6 +1,8 @@
-// components/button/Button.jsx
+// src/components/button/Button.jsx
 import * as React from "react";
-var Button = () => /* @__PURE__ */ React.createElement("button", null, "Boop");
+function Button() {
+  return /* @__PURE__ */ React.createElement("button", null, "Boop");
+}
 export {
   Button
 };

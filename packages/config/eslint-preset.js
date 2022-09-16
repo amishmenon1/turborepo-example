@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["react-app", "prettier"],
+  extends: ["airbnb"],
   settings: {
     next: {
       rootDir: ["apps/*/", "packages/*/"],

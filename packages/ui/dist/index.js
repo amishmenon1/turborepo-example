@@ -32,9 +32,11 @@ __export(ui_exports, {
   Button: () => Button
 });
 
-// components/button/Button.jsx
+// src/components/button/Button.jsx
 var React = __toESM(require("react"));
-var Button = () => /* @__PURE__ */ React.createElement("button", null, "Boop");
+function Button() {
+  return /* @__PURE__ */ React.createElement("button", null, "Boop");
+}
 module.exports = __toCommonJS(ui_exports);
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

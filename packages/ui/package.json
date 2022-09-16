@@ -12,11 +12,14 @@
     "dev": "tsup ./index.jsx --format esm,cjs --watch --external react",
     "lint": "eslint ./**/**/*.jsx --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "jest --coverage"
+    "test": "react-scripts test"
   },
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
     "config": "*",
     "tsup": "^5.10.1"
   }
