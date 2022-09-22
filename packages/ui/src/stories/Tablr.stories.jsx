@@ -1,11 +1,19 @@
-import { Tablr } from "../components/tablr/Tablr";
+import { Tablr } from "../components";
 
 export default {
   title: "Tablr - A Customizable React Table Component",
   component: Tablr,
   argTypes: {
-    rows: { control: "" },
-    headers: { control: "" },
+    rows: { control: { disable: true } },
+    headers: { control: { disable: true } },
+    cellTextColor: { control: { type: "color" } },
+    headerTextColor: { control: { type: "color" } },
+    cellBorderColor: { control: { type: "color" } },
+    backgroundColor: { control: { type: "color" } },
+    headerBorderColor: { control: { type: "color" } },
+    headerBackgroundColor: { control: { type: "color" } },
+    borderWidth: { control: { type: "radio" } },
+    cellPadding: { control: { type: "radio" } },
   },
 };
 
