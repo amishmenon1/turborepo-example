@@ -1,5 +1,5 @@
 {
-  "name": "@turborepo-test/admin",
+  "name": "@lis2-ui/admin",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@turborepo-test/ui": "*"
+    "@lis2-ui/ui": "*"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

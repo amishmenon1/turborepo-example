@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Button, Tablr } from "@turborepo-test/ui/src/components";
+import { Button } from "@lis2-ui/ui/src/components";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,16 +20,6 @@ function App() {
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
         <Button />
-        <Tablr
-          borderWidth="medium"
-          cellPadding="medium"
-          cellTextColor="black"
-          headerTextColor="white"
-          cellBorderColor="#747381"
-          headerBorderColor="#494866"
-          backgroundColor="#a6a5b8"
-          headerBackgroundColor="#65647a"
-        />
         <p>
           <a
             className="App-link"
