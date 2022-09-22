@@ -5,6 +5,9 @@ var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __esm = (fn, res) => function __init() {
+  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -26,13 +29,27 @@ var __toCommonJS = /* @__PURE__ */ ((cache) => {
   };
 })(typeof WeakMap !== "undefined" ? /* @__PURE__ */ new WeakMap() : 0);
 
+// ../../node_modules/tsup/assets/cjs_shims.js
+var init_cjs_shims = __esm({
+  "../../node_modules/tsup/assets/cjs_shims.js"() {
+  }
+});
+
 // index.jsx
 var ui_exports = {};
 __export(ui_exports, {
   Button: () => Button
 });
+init_cjs_shims();
+
+// src/components/index.jsx
+init_cjs_shims();
+
+// src/components/button/index.jsx
+init_cjs_shims();
 
 // src/components/button/Button.jsx
+init_cjs_shims();
 var React = __toESM(require("react"));
 function Button() {
   return /* @__PURE__ */ React.createElement("button", null, "Boop");

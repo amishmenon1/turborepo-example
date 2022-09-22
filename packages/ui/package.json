@@ -12,7 +12,9 @@
     "dev": "tsup ./index.jsx --format esm,cjs --watch --external react",
     "lint": "eslint ./**/**/*.jsx --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,6 +22,19 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-interactions": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/builder-webpack4": "^6.2.9",
+    "@storybook/manager-webpack4": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "@storybook/testing-library": "^0.0.13",
+    "storybook-css-modules-preset": "^1.0.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "chromatic": "^5.8.0",
+    "babel-loader": "^8.2.5",
     "config": "*",
     "tsup": "^5.10.1"
   }
