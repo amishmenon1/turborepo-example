@@ -3,9 +3,9 @@ var __esm = (fn, res) => function __init() {
   return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
 };
 
-// node_modules/tsup/assets/esm_shims.js
+// ../../node_modules/tsup/assets/esm_shims.js
 var init_esm_shims = __esm({
-  "node_modules/tsup/assets/esm_shims.js"() {
+  "../../node_modules/tsup/assets/esm_shims.js"() {
   }
 });
 
