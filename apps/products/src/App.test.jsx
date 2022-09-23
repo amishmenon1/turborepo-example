@@ -11,7 +11,9 @@ describe("test button rendering", () => {
   });
   it("should be in document", () => {
     render(<App />);
-    const buttonElement = screen.findByText("Boop");
-    waitFor(() => expect(buttonElement).toBeInTheDocument());
+    const buttonElement = waitFor(() => screen.findByText("Boop"));
+    waitFor(() => {
+      expect(buttonElement).toBeInTheDocument();
+    });
   });
 });

@@ -1,7 +1,7 @@
 import { PaginatedRange } from "../components";
 
 export default {
-  title: "PaginatedRange",
+  title: "Components/PaginatedRange",
   component: PaginatedRange,
   argTypes: {
     // colorProp: { control: "select" },

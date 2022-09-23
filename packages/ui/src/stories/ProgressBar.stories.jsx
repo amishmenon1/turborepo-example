@@ -1,7 +1,7 @@
 import { ProgressBar } from "../components";
 
 export default {
-  title: "ProgressBar",
+  title: "Components/ProgressBar",
   component: ProgressBar,
   argTypes: {
     colorProp: {
@@ -16,3 +16,18 @@ const Template = (args) => <ProgressBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const Blue = Template.bind({});
+Blue.args = {
+  colorProp: "blue",
+};
+
+export const Green = Template.bind({});
+Green.args = {
+  colorProp: "green",
+};
+
+export const Yellow = Template.bind({});
+Yellow.args = {
+  colorProp: "yellow",
+};
