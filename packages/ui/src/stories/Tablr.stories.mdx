@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { Tablr } from "../components";
+
+<Meta title="Docs/Tablr - Documentation" component={Tablr} />
+
+## Tablr
+
+#### A customizable React table component
+
+<Canvas>
+  <Story name="Light">
+    <Tablr
+      headers={["Col1", "Col2", "Col3"]}
+      rows={[
+        ["hi", "from", "MDX"],
+        ["hi", "from", "MDX"],
+        ["hi", "from", "MDX"],
+      ]}
+    />
+  </Story>
+</Canvas>
